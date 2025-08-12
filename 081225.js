@@ -14,12 +14,6 @@
 // }
 // typing();
 
-
-
-
-
-
-
 const movieLookup = `http://www.omdbapi.com/?apikey=c393ced6&s=love`;
 // insertEl defines where to put data in HTML
 const insertEl = document.querySelector(".results");
@@ -28,7 +22,6 @@ const movieIdBox = document.getElementById("idBox");
 const movieIdBtn = document.getElementById("idBtn");
 const BASE_URL = `https://www.omdbapi.com/`;
 const API_KEY = "c393ced6";
-
 
 function applyFilter() {
   let filtering = localStorage.getItem("fetchResults");
@@ -55,9 +48,6 @@ if (filterValue === 'A_Z') {
 render(filtering);
 }
 
-
-
-
 // function filterData() {
 //     let filterValue = document.getElementById("filter").value;
 // //if no sort, pass LS to render
@@ -81,8 +71,6 @@ function render(filtering) {
     )
     .join("");
 }
-
-
 
 async function fetchMovies(movieRequest) {
         console.log(movieRequest)
