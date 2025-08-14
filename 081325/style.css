@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 400px;
+}
+header {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+.header__user {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px;
+    padding: 16px;
+}
+.container {
+    margin: 24px 0;
+}
+.row {
+    margin: 0 16px;
+
+}
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.result {
+    width: 30%;
+}

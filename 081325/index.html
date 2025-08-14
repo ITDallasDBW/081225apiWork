@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAT Movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <h1>Header</h1>
+      <div class="header__user">
+      <div class="userData">
+        <input type="text" id="idBox" placeholder="What is THAT movie?" onchange="searchChange(event)"/>
+        <button type="submit" id="idBtn">Request</button>
+      </div>
+      <select id="filter" onchange="sortChange(event)">
+        <option value="" disabled selected>Sort Movies</option>
+        <option value="A_Z">Alphabetically A-Z</option>
+        <option value="Z_A">Alphabetically Z-A</option>
+        <option value="LOW_TO_HIGH">Oldest to Newest</option>
+        <option value="HIGH_TO_LOW">Newest to Oldest</option>
+      </select>
+      </div>
+    </header>
+    
+    <div class="container">
+      <div class="row">
+        <h2>Here are the results for: 
+        <span class="searchName"></span>
+        </h2>
+        <hr>
+
+
+        <div class="results">
+          <div class="result">
+            <h2>Title</h2>
+            <img src="https://" alt="">
+            <p>Released</p>
+            <p>IMDB ID:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <footer>Footer</footer>
+    <script src="app.js"></script>
+</body>
+</html>
