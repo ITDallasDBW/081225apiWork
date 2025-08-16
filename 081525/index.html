@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THAT Movie</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf48a6d416.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -12,8 +13,8 @@
 
       <div class="header__user">
       <div class="userData">
-        <input type="text" id="idBox" placeholder="What is THAT movie?" onchange="searchChange(event)"/>
-        
+        <input type="text" id="idBox" placeholder="What is THAT movie?" />
+        <!-- onchange="searchChange(event)" -->
         <button type="submit" id="idBtn">Request</button>
       </div>
       <select id="filter" onchange="sortChange(event)">
@@ -24,14 +25,13 @@
         <option value="HIGH_TO_LOW">Newest to Oldest</option>
       </select>
       </div>
-      <div id="loading" class="text-center my-3" style="display: none;">
-  <div class="spinner-border text-highlight" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
-</div>
+
     </header>
-    
-    <div class="container">
+      <div class="loading hide__spinner">
+              <i class="fa-solid fa-gear"></i>
+      </div>
+
+      <div class="container">
       <div class="row">
         <h2 class="searchResults">
           <!-- Here are the results for: 

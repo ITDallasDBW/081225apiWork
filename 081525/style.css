@@ -80,3 +80,29 @@ footer {
     /* visibility: hidden; */
     display: none;
 }
+
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+.hide__spinner {
+    display: none;
+}
+/* .loading .loading__spinner {
+    display: block;
+} */
+
+.fa-gear {
+    animation: rotate 2000ms infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
